@@ -1,5 +1,3 @@
-version: "3"
-
 volumes:
   portainer_data:
 
@@ -15,7 +13,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data 
     dns:
-      - 192.168.2.20
+      - 192.168.2.15
       - 192.168.2.1
     ports:
       - 8000:8000
@@ -37,7 +35,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /var/lib/docker/volumes:/var/lib/docker/volumes
     dns:
-      - 192.168.2.20
+      - 192.168.2.15
       - 192.168.2.1
     ports:
       - 9001:9001
